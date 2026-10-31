@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registrar denuncia | Gob.pe</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <div class="logo">
+            <span class="logo-icono">✿</span>
+            gob.pe
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenedor">
+
+        <h1>REGISTRAR DENUNCIA</h1>
+
+        <p class="subtitulo">
+            Seleccione la modalidad en la que desea registrar su denuncia
+        </p>
+
+        <!-- OPCIONES DE DENUNCIA -->
+        <section class="modalidades">
+
+            <!-- DENUNCIA ANÓNIMA -->
+            <article class="opcion">
+
+                <h2>SIN IDENTIFICARME</h2>
+
+                <div class="avatar avatar-anonimo">
+                    <span>👤</span>
+                </div>
+
+                <p class="descripcion">
+                    Registre su denuncia sin proporcionar sus datos personales.
+                </p>
+
+                <button
+                    class="btn-denunciar"
+                    type="button"
+                    data-modalidad="anonima">
+
+                    Denunciar
+
+                </button>
+
+            </article>
+
+            <!-- DENUNCIA IDENTIFICADA -->
+            <article class="opcion">
+
+                <h2>IDENTIFICÁNDOME</h2>
+
+                <div class="avatar avatar-identificado">
+                    <span>👨</span>
+                </div>
+
+                <p class="descripcion">
+                    Registre su denuncia proporcionando sus datos personales.
+                </p>
+
+                <button
+                    class="btn-denunciar"
+                    type="button"
+                    data-modalidad="identificada">
+
+                    Denunciar
+
+                </button>
+
+            </article>
+
+        </section>
+
+        <!-- MENSAJE DE SELECCIÓN -->
+        <p id="mensaje" class="mensaje" role="status"
+           aria-live="polite"></p>
+
+    </main>
+
+    <!-- ACCESIBILIDAD -->
+    <button class="accesibilidad"
+            type="button"
+            aria-label="Opciones de accesibilidad"
+            title="Opciones de accesibilidad">
+
+        ♿
+
+    </button>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
